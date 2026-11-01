@@ -59,7 +59,7 @@ void quickSort(std::vector<std::string> &palabras){
         return;
     quickSortRec(palabras, 0, static_cast<int>(palabras.size()) - 1);
 }
-//comprobar que quicksort funciona correctamente (compara y devuelve true cuando estan en orden)
+//comprobar que quicksort funciona correctamente (devuelve true cuando estan en orden)
 bool estaOrdenado(const std::vector<std::string> &palabras){
     for (std::size_t i = 1; i < palabras.size(); i++){
         if (palabras[i] < palabras[i - 1])
