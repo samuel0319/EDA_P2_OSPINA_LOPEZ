@@ -1,0 +1,23 @@
+==================== ANALISIS ====================
+
+Resultados de referencia mostrados en la captura:
+- Mas rapido: QuickSort (std::vector), 26.32 ms.
+- Menor memoria reportada: HeapSort (Binary Heap), 3.10 MB.
+
+Complejidad teorica:
+- QuickSort (std::vector): promedio O(n log n), peor caso O(n^2). Usa memoria adicional para la pila de recursion.
+- HeapSort (Binary Heap): O(n log n) en el peor caso. La construccion del heap cuesta O(n) y el ordenamiento se realiza en el mismo vector, con memoria auxiliar O(1) aparte de la estructura de entrada.
+- Arbol AVL: O(n log n) para insertar n palabras y O(n) para el recorrido inorden. Requiere memoria adicional para los nodos y sus punteros.
+
+Comparacion practica:
+El tiempo real depende del equipo, del compilador, de la distribucion de las palabras y de la implementacion. Por eso, el algoritmo con mejor complejidad teorica no necesariamente obtiene el menor tiempo medido.
+
+Ventajas y desventajas:
+- Vector / QuickSort: suele ser rapido y aprovecha la localidad de memoria; su peor caso teorico es O(n^2), aunque esta implementacion usa la mediana de tres como pivote.
+- Binary Heap / HeapSort: garantiza O(n log n) y ordena en el mismo vector; suele realizar mas intercambios y accesos menos locales que QuickSort.
+- Arbol AVL: mantiene el arbol balanceado y permite obtener el orden mediante recorrido inorden; consume memoria adicional por cada nodo y requiere rotaciones durante las inserciones.
+
+Conclusion:
+Para ordenar una sola lista, QuickSort suele ofrecer buen rendimiento practico. HeapSort es una alternativa con garantia O(n log n) y poco espacio auxiliar. AVL es util cuando interesa mantener los datos organizados en una estructura de busqueda, aunque tiene mayor sobrecosto de memoria.
+
+Nota: los tiempos y la memoria de la captura son resultados de esa ejecucion de referencia; pueden variar entre computadores.

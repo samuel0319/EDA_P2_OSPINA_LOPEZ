@@ -1,0 +1,14 @@
+==================== RESULTADOS ====================
+
+Segun la captura compartida:
+- QuickSort: 26.32 ms (resultado de referencia).
+- HeapSort: memoria reportada de 3.10 MB (resultado de referencia).
+
+Archivos de salida configurados en main.cpp:
+1. QuickSort -> data/dataset_quicksort.txt
+2. HeapSort  -> data/sorted_heapsort.txt
+3. AVL       -> data/ordenado_avl.txt
+
+El programa muestra en consola la cantidad de palabras leidas, el tiempo de ejecucion y la verificacion del ordenamiento de cada algoritmo. Tambien muestra las primeras 100 palabras y guarda la lista completa en el archivo de salida correspondiente.
+
+Los tiempos completos de los tres algoritmos deben tomarse de la ejecucion final en el computador donde se hara la demostracion, ya que pueden variar segun el equipo.
